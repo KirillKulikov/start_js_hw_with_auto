@@ -18,13 +18,13 @@ let isAccess
 // your code
 if (isAdmin || isVerifiedUser) {
     if (hasSpecialPermission || hasTemporaryPass) {
-        alert("Вы вошли в личный кабинет");
+        console.log("Вы вошли в личный кабинет");
         isAccess = true;
     } else {
-        alert("У Вас нет разрешения! Запросите пропуск!");
+        console.log("У Вас нет разрешения! Запросите пропуск!");
         isAccess = false;
     }
 } else {
-    alert("Доступ закрыт! Запросите доступ!");
+    console.log("Доступ закрыт! Запросите доступ!");
     isAccess = false;
 }
