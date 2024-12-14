@@ -8,11 +8,23 @@
 */
 
 // тестовые данные (значения можно менять)
-const isAdmin = false
+const isAdmin = true
 const isVerifiedUser = true
 const hasSpecialPermission = true
-const hasTemporaryPass = false
+const hasTemporaryPass = true
 
 let isAccess
 
 // your code
+if (isAdmin || isVerifiedUser) {
+    if (hasSpecialPermission || hasTemporaryPass) {
+        alert("Вы вошли в личный кабинет");
+        isAccess = true;
+    } else {
+        alert("У Вас нет разрешения! Запросите пропуск!");
+        isAccess = false;
+    }
+} else {
+    alert("Доступ закрыт! Запросите доступ!");
+    isAccess = false;
+}
