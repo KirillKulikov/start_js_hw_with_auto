@@ -13,4 +13,19 @@
 includesElement([1, 2, 3], 2)  // должен вернуть `true`.
 */
 
-function includesElement() {}
+// Массив для примера
+// let numberArray = [25, 7, 15, 29, 12, 8, 14, 10];
+// let userElement = 12;
+
+function includesElement(array, element) {
+    // console.log(element)
+    for (let i = 0; i < array.length; i++) {
+        if (element === array[i]) {
+            return true
+        }
+    }
+    return false
+}
+
+
+// console.log(includesElement(numberArray, userElement))
