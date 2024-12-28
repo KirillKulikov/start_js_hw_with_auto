@@ -14,6 +14,9 @@
 
 Подсказка: можно использовать функцию `includesElement`, которую мы написали ранее. Переписывать её не нужно, она доступна по всему проекту за счёт hoisting.
 */
+
+// const scoreArray = [82, 75, 91, 82, 93, 75, 99]
+
 function findUniqueElements(array) {
     let resultArray = []
 
@@ -25,3 +28,6 @@ function findUniqueElements(array) {
 
     return resultArray;
 }
+
+// let totalScore = findUniqueElements(scoreArray);
+// console.log(totalScore);
