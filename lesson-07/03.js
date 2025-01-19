@@ -9,6 +9,19 @@
 * truncate("Короткая строка", 20) // Ожидаемый результат: "Короткая строка"
 */
 
+const stroke = "Здесь живут самые счастливые люди";
+const lengthCateStroke = 15;
+const plusEnd = "..."
+
 function truncate(str, maxLength) {
   // your code
+  let newStroke = "";
+  if (maxLength < str.length) {
+    newStroke = str.slice(0, maxLength) + plusEnd;
+  } else {
+    newStroke = str;
+  }
+  return newStroke;
 }
+
+console.log(truncate(stroke, lengthCateStroke))
