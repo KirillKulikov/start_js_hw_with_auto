@@ -33,8 +33,11 @@ function filter(array, callback) {
   return result;
 }
 
-const oddNumbers = filter(numbers, (element, index) => {
+// Пример использования:
+const numbers = [1, 2, 3, 4, 5];
+
+const oddNumbers = filter(numbers, (element, i) => {
   return element % 2 !== 0;
 });
 
-// console.log(oddNumbers);
+console.log(oddNumbers);
