@@ -35,7 +35,7 @@ function map(array, callback) {
 // Пример использования:
 const numbers = [1, 2, 3, 4, 5];
 
-const doubledNumbers = map(numbers, (element, index) => {
+const doubledNumbers = map(numbers, (element, i) => {
   return element * 2;
 });
 
